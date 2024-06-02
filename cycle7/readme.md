@@ -1,26 +1,31 @@
-# zegonix/cycle7
+# Description
 
-Configuration for the the custom PCB for TKD's Cycle7 by zegonix.
+Configuration for my custom PCB for TKD's Cycle7 with (weird) split spacebar design.
 
 * Keyboard Maintainer: [zegonix](https://github.com/zegonix)
 * Hardware Supported: [custom-cycle7-pcb](https://github.com/zegonix/custom-cycle7-pcb)
 * Hardware Availability: the pcb is open source, order it yourself
 
+# Building and flashing firmware
 To build and flash the firmware, set up the qmk tool and use the compile and flash commands:
 
-    `qmk config user.keyboard=zegonix-qmk/cycle7`
-    `qmk config user.keymap=quaken`
-    `qmk compile`
-    `qmk flash`
+```
+qmk config user.keyboard=zegonix-qmk/cycle7
+qmk config user.keymap=quaken
+qmk compile
+qmk flash
+```
 
 Alternatively you can use the QMK root level Makefile:
 
-    `make zegonix/cycle7:quaken             // build firmware` 
-    `make zegonix/cycle7:quaken:dfu-utils   // build and flash firmware`
+```
+make zegonix/cycle7:quaken             // build firmware
+make zegonix/cycle7:quaken:dfu-utils   // build and flash firmware
+```
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with the [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
-## Bootloader
+# Bootloader
 
 Enter the bootloader in 2 ways:
 
