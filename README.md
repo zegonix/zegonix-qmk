@@ -1,2 +1,2 @@
 # zegonix-qmk
-qmk configuration for my keyboards
+qmk configurations for my keyboards
